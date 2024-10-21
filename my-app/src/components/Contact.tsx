@@ -1,15 +1,14 @@
 import React from 'react';
+import './styles.css'; // Import your CSS file
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
-    <div>
+    <div className="contact-section">
       <h1>Contact</h1>
       <h4>Contact Information</h4>
       <p>Email: <a href="mailto:Chaitnya@email.com">Chaitnya@email.com</a></p>
       <p>Mobile: 999999999</p>
-      <p>Input number to call:</p>
+      <label>Input number to call:</label>
       <input 
         type="tel" 
         placeholder="Enter phone number" 

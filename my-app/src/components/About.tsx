@@ -1,12 +1,11 @@
 import React from 'react';
+import './styles.css'; // Import your CSS file
 
-type Props = {};
-
-const About = (props: Props) => {
+const About = () => {
   return (
-    <div>
+    <div className="about-section">
       <h1>About Me</h1>
-      <p>Hello, this is Chaitanya. I'm an SDE at UST, and I'm learning React with TypeScript.</p>
+      <p>Hello, I'm Chaitanya, an SDE at UST, learning React with TypeScript.</p>
     </div>
   );
 };

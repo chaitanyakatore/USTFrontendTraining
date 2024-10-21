@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles.css'; // Import your CSS file
 
 interface Project {
   id: number;
@@ -8,54 +9,15 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
-    id: 1,
-    name: "Project Alpha",
-    link: "https://example.com/project-alpha",
-    description: "An innovative project that aims to improve user experience.",
-  },
-  {
-    id: 2,
-    name: "Project Beta",
-    link: "https://example.com/project-beta",
-    description: "A groundbreaking project focused on sustainability.",
-  },
-  {
-    id: 3,
-    name: "Project Gamma",
-    link: "https://example.com/project-gamma",
-    description: "A collaborative platform for developers and designers.",
-  },
-  {
-    id: 4,
-    name: "Project Delta",
-    link: "https://example.com/project-delta",
-    description: "An educational app that helps users learn coding.",
-  },
-  {
-    id: 5,
-    name: "Project Epsilon",
-    link: "https://example.com/project-epsilon",
-    description: "A social media platform for art enthusiasts.",
-  },
-  {
-    id: 6,
-    name: "Project Zeta",
-    link: "https://example.com/project-zeta",
-    description: "A fitness app that customizes workout plans for users.",
-  },
+  { id: 1, name: 'Project 1', link: 'https://example.com/project1', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { id: 2, name: 'Project 2', link: 'https://example.com/project2', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+  
 ];
 
-interface State {
-  // Define any state properties if needed
-}
-
-class Projects extends Component<{}, State> {
-  state: State = {};
-
+class Projects extends Component {
   render() {
     return (
-      <div>
+      <div className="projects-section">
         <h1>Projects</h1>
         <ul>
           {projects.map(project => (
